@@ -1,5 +1,6 @@
 from torch.utils import data
 
+
 class MoleculeDataset(data.Dataset):
     """
     所有分子数据集的父类，可以提取一些常规操作放在init方法中
@@ -13,3 +14,5 @@ class MoleculeDataset(data.Dataset):
 
     def __len__(self):
         raise NotImplementedError
+
+
